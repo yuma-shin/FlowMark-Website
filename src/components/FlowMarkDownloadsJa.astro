@@ -16,7 +16,7 @@ const links = await getFlowMarkDownloadLinks();
     <Card title="Windows" icon="windows" iconColor="#7AB8FF" size="sm">
       Windows 10 / 11（64-bit）向け。用途に応じて配布形式を選択してください。
       <div class="mt-6 flex flex-col gap-3">
-        <Button label=".exe インストーラー" link={links.windowsSetupExe} variant="primary" />
+        <Button label=".exe インストーラー" link={links.windowsSetupExe} variant="outline-primary" />
         <Button label=".exe ポータブル" link={links.windowsPortableExe} variant="outline-primary" />
         <Button label=".zip アーカイブ" link={links.windowsZip} variant="outline-primary" />
       </div>
@@ -26,7 +26,7 @@ const links = await getFlowMarkDownloadLinks();
       その際は、以下の手順でアプリを起動いただくか、ご自身のローカル環境でビルドしていただくことを推奨します。
       <br /><a href="https://github.com/yuma-shin/FlowMark/blob/main/RUN_UNSIGNED_APPS.md" target="_blank">Running Unsigned Apps</a>
       <div class="mt-6 flex flex-col gap-3">
-        <Button label=".dmg" link={links.macArmDmg} variant="primary" />
+        <Button label=".dmg" link={links.macArmDmg} variant="outline-primary" />
         <Button label=".zip (Universal)" link={links.macUniversalZip} variant="outline-primary" />
       </div>
     </Card>

@@ -16,7 +16,7 @@ const links = await getFlowMarkDownloadLinks();
     <Card title="Windows" icon="windows" iconColor="#7AB8FF" size="sm">
       For Windows 10 / 11 (64-bit). Choose the package format you need.
       <div class="mt-6 flex flex-col gap-3">
-        <Button label=".exe Installer" link={links.windowsSetupExe} variant="primary" />
+        <Button label=".exe Installer" link={links.windowsSetupExe} variant="outline-primary" />
         <Button label=".exe Portable" link={links.windowsPortableExe} variant="outline-primary" />
         <Button label=".zip Archive" link={links.windowsZip} variant="outline-primary" />
       </div>
@@ -25,7 +25,7 @@ const links = await getFlowMarkDownloadLinks();
       For Apple Silicon and Intel Macs, we provide both a standard installer and a compressed version. However, because the app is not signed, you may be unable to launch it due to a security warning. In that case, we recommend following the steps below to launch the app, or building it in your own local environment.
       <br /><a href="https://github.com/yuma-shin/FlowMark/blob/main/RUN_UNSIGNED_APPS.en.md" target="_blank">Running Unsigned Apps</a>
       <div class="mt-6 flex flex-col gap-3">
-        <Button label=".dmg" link={links.macArmDmg} variant="primary" />
+        <Button label=".dmg" link={links.macArmDmg} variant="outline-primary" />
         <Button label=".zip (Universal)" link={links.macUniversalZip} variant="outline-primary" />
       </div>
     </Card>
