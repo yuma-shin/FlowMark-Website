@@ -18,16 +18,31 @@ import Grid from "~/components/user-components/Grid.astro";
   description="Markdownノートを効率的に整理・編集するために必要なすべてを備えています。"
 >
   <Grid columns={4}>
-    <Card title="Markdownエディタ" icon="markdown" iconColor="#FF8585">
+    <Card
+      title="Markdownエディタ"
+      icon="markdown"
+      iconColor="#FF8585"
+      size="sm"
+    >
       CodeMirrorベースのリアルタイム編集。スプリットビュー、プレビュー、エディタのみの3モードで完璧なワークフローを実現。
     </Card>
-    <Card title="フォルダベース管理" icon="folder" iconColor="#7BE1A4">
+    <Card
+      title="フォルダベース管理"
+      icon="folder"
+      iconColor="#7BE1A4"
+      size="sm"
+    >
       直感的にノートを管理。ルートフォルダを選択し、フォルダツリーとノートリストでMarkdownファイルを整理。
     </Card>
-    <Card title="Front Matter対応" icon="code" iconColor="#FFD97B">
+    <Card title="Front Matter対応" icon="code" iconColor="#FFD97B" size="sm">
       YAMLメタデータによるタイトル、タグ、日時管理。タグベースのフィルタリングで素早くノート検索。
     </Card>
-    <Card title="自動保存・ファイル監視" icon="save" iconColor="#979BFF">
+    <Card
+      title="自動保存・ファイル監視"
+      icon="save"
+      iconColor="#979BFF"
+      size="sm"
+    >
       ファイル変更をリアルタイム検知し、デバウンス付き自動保存。外部エディタとのシームレスな連携。
     </Card>
   </Grid>

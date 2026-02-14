@@ -12,7 +12,7 @@ const links = await getFlowMarkDownloadLinks();
   title="プラットフォーム別ダウンロード"
   description="お使いのOSに合わせてインストーラーを選択してください。"
 >
-  <Grid columns={1}>
+  <Grid columns={2}>
     <Card title="Windows" icon="windows" iconColor="#7AB8FF" size="sm">
       Windows 10 / 11（64-bit）向け。用途に応じて配布形式を選択してください。
       <div class="mt-6 flex flex-col gap-3">
@@ -21,14 +21,14 @@ const links = await getFlowMarkDownloadLinks();
         <Button label=".zip アーカイブ" link={links.windowsZip} variant="outline-primary" />
       </div>
     </Card>
-    <!--
-    <Card title="macOS" icon="apple" iconColor="#FFB370" size="sm">
-      Apple Silicon / Intel Mac向けに、標準インストーラーと圧縮版を用意できます。
+    <Card title="macOS (Beta)" icon="apple" iconColor="#FFB370" size="sm">
+      Apple Silicon / Intel Mac向けに、標準インストーラーと圧縮版を用意しています。ただし、署名を行っていないため、セキュリティ警告で起動できない場合があります。
+      その際は、以下の手順でアプリを起動いただくか、ご自身のローカル環境でビルドしていただくことを推奨します。
+      <br /><a href="https://github.com/yuma-shin/FlowMark/blob/main/RUN_UNSIGNED_APPS.md" target="_blank">Running Unsigned Apps</a>
       <div class="mt-6 flex flex-col gap-3">
         <Button label=".dmg" link={links.macArmDmg} variant="primary" />
         <Button label=".zip (Universal)" link={links.macUniversalZip} variant="outline-primary" />
       </div>
     </Card>
-     -->
   </Grid>
 </Section>
