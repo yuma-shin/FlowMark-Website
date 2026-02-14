@@ -1,0 +1,39 @@
+{
+  "site": {
+    "title": "FlowMark",
+    "logo": "/src/assets/icon-light.png",
+    "logo_darkmode": "/src/assets/icon-dark.png",
+    "logo_width": "40",
+    "logo_height": "40",
+    "logo_text": "FlowMark"
+  },
+
+  "settings": {
+    "search": true,
+    "theme_switcher": true
+  },
+
+  "params": {
+    "footer_contact": {
+      "enable": true,
+      "action": "#"
+    },
+    "copyright": "&copy; 2026 FlowMark. All Rights Reserved."
+  },
+
+  "navigation_button": {
+    "enable": true,
+    "label": "Download",
+    "translations": {
+      "ja": "ダウンロード",
+      "en": "Download"
+    },
+    "link": "/download/"
+  },
+
+  "github_button": {
+    "enable": true,
+    "label": "GitHub",
+    "link": "https://github.com/yuma-shin/FlowMark"
+  }
+}

@@ -1,0 +1,32 @@
+---
+import Section from "~/components/Section.astro";
+import Card from "~/components/user-components/NewCard.astro";
+import Grid from "~/components/user-components/Grid.astro";
+import Button from "~/components/user-components/Button.astro";
+import { getFlowMarkDownloadLinks } from "~/lib/flowmarkDownloads";
+
+const links = await getFlowMarkDownloadLinks();
+---
+
+<Section
+  title="プラットフォーム別ダウンロード"
+  description="お使いのOSに合わせてインストーラーを選択してください。"
+>
+  <Grid columns={2}>
+    <Card title="Windows" icon="windows" iconColor="#7AB8FF" size="sm">
+      Windows 10 / 11（64-bit）向け。用途に応じて配布形式を選択してください。
+      <div class="mt-6 flex flex-col gap-3">
+        <Button label=".exe インストーラー" link={links.windowsSetupExe} variant="primary" />
+        <Button label=".exe ポータブル" link={links.windowsPortableExe} variant="outline-primary" />
+        <Button label=".zip アーカイブ" link={links.windowsZip} variant="outline-primary" />
+      </div>
+    </Card>
+    <Card title="macOS" icon="apple" iconColor="#FFB370" size="sm">
+      Apple Silicon / Intel Mac向けに、標準インストーラーと圧縮版を用意できます。
+      <div class="mt-6 flex flex-col gap-3">
+        <Button label=".dmg" link={links.macArmDmg} variant="primary" />
+        <Button label=".zip (Universal)" link={links.macUniversalZip} variant="outline-primary" />
+      </div>
+    </Card>
+  </Grid>
+</Section>

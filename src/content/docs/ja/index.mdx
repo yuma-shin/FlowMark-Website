@@ -1,0 +1,177 @@
+---
+title: FlowMark - ローカルMarkdownノートエディタ
+description: プライバシーファーストで、ローカルファイルシステムと統合されたMarkdownノート管理用の軽量デスクトップアプリケーション。
+template: splash
+hero:
+  title: |
+    <img src="/src/assets/icon-dark.svg" alt="FlowMark Logo" class="w-25 h-25 inline-block align-middle" />
+    <div class="mt-2">FlowMark</div>
+  tagline: デスクトップ用の軽量Markdownノートエディタ。<br />あなたのノートをローカルに、プライベートに、そしてあなたの管理下に置きます。
+---
+
+import Section from "~/components/Section.astro";
+import Card from "~/components/user-components/NewCard.astro";
+import Grid from "~/components/user-components/Grid.astro";
+
+<Section
+  title="FlowMarkの機能"
+  description="Markdownノートを効率的に整理・編集するために必要なすべてを備えています。"
+>
+  <Grid columns={4}>
+    <Card title="Markdownエディタ" icon="markdown" iconColor="#FF8585">
+      CodeMirrorベースのリアルタイム編集。スプリットビュー、プレビュー、エディタのみの3モードで完璧なワークフローを実現。
+    </Card>
+    <Card title="フォルダベース管理" icon="folder" iconColor="#7BE1A4">
+      直感的にノートを管理。ルートフォルダを選択し、フォルダツリーとノートリストでMarkdownファイルを整理。
+    </Card>
+    <Card title="Front Matter対応" icon="code" iconColor="#FFD97B">
+      YAMLメタデータによるタイトル、タグ、日時管理。タグベースのフィルタリングで素早くノート検索。
+    </Card>
+    <Card title="自動保存・ファイル監視" icon="save" iconColor="#979BFF">
+      ファイル変更をリアルタイム検知し、デバウンス付き自動保存。外部エディタとのシームレスな連携。
+    </Card>
+  </Grid>
+</Section>
+
+import HeroTabs from "~/components/HeroTabs.astro";
+import HeroTabsItem from "~/components/HeroTabsItem.astro";
+
+<Section
+  title="数ステップで簡単に"
+  description="シンプルなセットアップで、すぐにノート管理を開始できます。"
+>
+  <HeroTabs>
+    <HeroTabsItem
+      title="FlowMarkをインストール"
+      subtitle="右上の「ダウンロード」ボタンをクリックし、お使いのプラットフォーム向けの最新版を入手し、インストールします。"
+      number={1}
+      image="/src/assets/step-1.png"
+      imageAlt="ダウンロードステップ"
+    />
+    <HeroTabsItem
+      title="ノートフォルダを選択"
+      subtitle="FlowMarkを起動しMarkdownファイルが保存されている場所(ルートフォルダ)を選択します。"
+      number={2}
+      image="/src/assets/step-2.png"
+      imageAlt="フォルダ選択ステップ"
+    />
+    <HeroTabsItem
+      title="編集を開始"
+      subtitle="すぐにノートの整理と編集を始めることが出来ます。"
+      number={3}
+      image="/src/assets/flowmark-light.png"
+      imageAlt="編集開始ステップ"
+    />
+  </HeroTabs>
+</Section>
+
+import ThemeDemo from "~/components/ThemeDemo.astro";
+
+<Section
+  title="美しい <span class='light-text'>テーマ切り替え</span>"
+  description="ダーク/ライトモードをシームレスに切り替え、あなたの好みに合わせます。"
+>
+
+<ThemeDemo
+  darkImage="/src/assets/flowmark-dark.png"
+  lightImage="/src/assets/flowmark-light.png"
+/>
+
+</Section>
+
+import AccordionContainer from "~/components/AccordionContainer.astro";
+import Accordion from "~/components/Accordion.astro";
+
+<Section
+  title={'よくあるご質問'}
+  description="FlowMarkについてのよくある質問と回答をご紹介します。"
+>
+
+<AccordionContainer tabList={
+  [
+    {
+      type: 'basic',
+      title: 'はじめに',
+      subtitle:'FlowMarkのダウンロードと使用方法。',
+      icon: "rocket"
+
+    },
+    {
+      type: 'setting',
+      title: '機能と使い方',
+      subtitle:'FlowMarkの機能を理解する。',
+      icon: "settings"
+
+    },
+    {
+      type: 'help',
+      title: 'プライバシーとサポート',
+      subtitle:'セキュリティとサポート情報。',
+      icon: "support"
+
+    }
+
+]
+}>
+
+<Accordion
+  question="FlowMarkとは何ですか？"
+  answer="FlowMarkは、コンピュータのローカルに保存されたMarkdownファイルを管理できる軽量デスクトップノートエディタです。クラウドなし、サブスクリプションなし。あなたのノートはあなたの管理下にあります。"
+  type="basic"
+/>
+<Accordion
+  question="どのように始めればいいですか？"
+  answer="FlowMarkをお使いのプラットフォーム向けにダウンロードし、ノートフォルダを選択して編集を開始するだけ。シンプルです。ノートはコンピュータのどこのフォルダにでも置けます。"
+  type="basic"
+/>
+<Accordion
+  question="FlowMarkはどのファイル形式に対応していますか？"
+  answer="FlowMarkは主にMarkdown（.md）ファイルで動作します。ローカルファイルシステムを尊重するので、すべてのノートはプレーンテキストファイルで、どのエディタでも編集できます。"
+  type="basic"
+/>
+<Accordion
+  question="アカウントが必要ですか？"
+  answer="いいえ。FlowMarkはアカウント作成やサインインなしで、完全にオフラインで動作します。"
+  type="basic"
+/>
+
+<Accordion
+  question="Front Matterとは何ですか？"
+  answer="Front MatterはMarkdownファイルの上部にあるYAMLメタデータです。FlowMarkはタイトル、タグ、日時などのメタデータを保存して、ノート整理と検索を改善します。"
+  type="setting"
+/>
+<Accordion
+  question="タグでノートを整理できますか？"
+  answer="もちろんです！Front Matterにタグを追加することで、カテゴリやトピックでノートをフィルタリングして素早く検索できます。FlowMarkはタグベースのフィルタリングを提供しています。"
+  type="setting"
+/>
+<Accordion
+  question="FlowMarkはリアルタイムプレビューに対応していますか？"
+  answer="はい。FlowMarkはスプリットビュー（エディタとプレビュー並べて表示）、フルプレビューモード、エディタのみモードを提供します。あなたにぴったりなビューを選んでください。"
+  type="setting"
+/>
+<Accordion
+  question="同じファイルを他のエディタで編集できますか？"
+  answer="もちろんです！FlowMarkはファイル変更を監視して、外部から編集されたファイルを自動で同期します。FlowMarkと他のエディタを同時に使用しても問題ありません。"
+  type="setting"
+/>
+
+<Accordion
+  question="FlowMarkは無料ですか？"
+  answer="はい、FlowMarkは完全に無料でオープンソースです。個人プロジェクト、商用プロジェクト、制限なく利用できます。"
+  type="help"
+/>
+<Accordion
+  question="データはどこに保存されていますか？"
+  answer="すべてのノートはコンピュータのMarkdownファイルにローカル保存されます。FlowMarkはデータをアップロード、クラウド同期、または他の場所に送信することはありません。"
+  type="help"
+/>
+<Accordion
+  question="FlowMarkにモバイルアプリはありますか？"
+  answer="現在、FlowMarkはデスクトップアプリケーションのみ提供しておりモバイルアプリの提供は未定です。ノートはプレーンなMarkdownファイルなので、モバイルでは任意のMarkdownエディタで編集できます。"
+  type="help"
+/>
+
+</AccordionContainer>
+
+</Section>

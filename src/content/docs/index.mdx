@@ -1,0 +1,180 @@
+---
+title: FlowMark - Your Local Markdown Note Editor
+description: A lightweight, privacy-first desktop app for managing Markdown notes with local file system integration.
+template: splash
+hero:
+  title: |
+    <img src="/src/assets/icon-dark.svg" alt="FlowMark Logo" class="w-25 h-25 inline-block align-middle" />
+    <div class="mt-2">FlowMark</div>
+  tagline: A lightweight Markdown note editor for your desktop. Keep your notes local, private, and under your control.
+---
+
+import Section from "~/components/Section.astro";
+import Card from "~/components/user-components/NewCard.astro";
+import Grid from "~/components/user-components/Grid.astro";
+
+<Section title="FlowMark features" description="Everything you need to organize and edit your Markdown notes efficiently.">
+
+<Grid columns={4}>
+  <Card title="Markdown Editor" icon="markdown" iconColor="#FF8585" size="sm">
+    Real-time editing powered by CodeMirror. Choose from split view, preview, or editor-only mode for an efficient workflow.
+  </Card>
+  <Card title="Folder-Based Management" icon="folder" iconColor="#7BE1A4" size="sm">
+    Manage notes intuitively. Select a root folder, then organize Markdown files through a folder tree and note list.
+  </Card>
+  <Card title="Front Matter Support" icon="code" iconColor="#FFD97B" size="sm">
+    Manage titles, tags, and timestamps with YAML metadata. Quickly find notes using tag-based filtering.
+  </Card>
+  <Card
+    title="Auto Save and File Watching"
+    icon="save"
+    iconColor="#979BFF"
+    size="sm"
+  >
+    Detect file changes in real time with debounced auto-save. Works smoothly alongside external editors.
+  </Card>
+</Grid>
+</Section>
+
+import HeroTabs from "~/components/HeroTabs.astro";
+import HeroTabsItem from "~/components/HeroTabsItem.astro";
+
+<Section
+  title="Get started"
+  description="Simple setup to start managing your notes right away."
+>
+  <HeroTabs>
+    <HeroTabsItem
+      title="Download FlowMark"
+      subtitle="Get the latest version for your platform."
+      number={1}
+      image="/src/assets/step-1.png"
+      imageAlt="Download step"
+    />
+    <HeroTabsItem
+      title="Select Your Note Folder"
+      subtitle="Choose where your Markdown files are stored."
+      number={2}
+      image="/src/assets/step-2.png"
+      imageAlt="Select folder step"
+    />
+    <HeroTabsItem
+      title="Start Editing"
+      subtitle="Begin organizing and editing your notes immediately."
+      number={3}
+      image="/src/assets/flowmark-light.png"
+      imageAlt="Start editing step"
+    />
+  </HeroTabs>
+</Section>
+
+import ThemeDemo from "~/components/ThemeDemo.astro";
+
+<Section
+  title="Beautiful <span class='light-text'>theme switching</span>"
+  description="Seamlessly switch between dark and light mode to match your preference."
+>
+
+<ThemeDemo
+  darkImage="/src/assets/flowmark-dark.png"
+  lightImage="/src/assets/flowmark-light.png"
+/>
+
+</Section>
+
+import AccordionContainer from "~/components/AccordionContainer.astro";
+import Accordion from "~/components/Accordion.astro";
+
+<Section
+  title={'Got questions? <span class="light-text">We have answers</span>'}
+  description="Find answers to common questions about FlowMark."
+>
+
+<AccordionContainer tabList={
+  [
+    {
+      type: 'basic',
+      title: 'Getting Started',
+      subtitle:'How to download and use FlowMark.',
+      icon: "rocket"
+
+    },
+    {
+      type: 'setting',
+      title: 'Features & Usage',
+      subtitle:'Understanding FlowMarks capabilities.',
+      icon: "settings"
+
+    },
+    {
+      type: 'help',
+      title: 'Privacy & Support',
+      subtitle:'Security and support information.',
+      icon: "support"
+
+    }
+
+]
+}>
+
+<Accordion
+  question="What is FlowMark?"
+  answer="FlowMark is a lightweight desktop note editor that lets you manage Markdown files stored locally on your computer. No cloud, no subscriptions—just your notes under your control."
+  type="basic"
+/>
+<Accordion
+  question="How do I get started?"
+  answer="Download FlowMark for your platform, select your note folder, and start editing. It's that simple. Your notes can be in any folder on your computer."
+  type="basic"
+/>
+<Accordion
+  question="What file formats does FlowMark support?"
+  answer="FlowMark primarily works with Markdown (.md) files. It respects your local file system, so all your notes are plain text files that you can edit with any editor."
+  type="basic"
+/>
+<Accordion
+  question="Do I need an account?"
+  answer="No. FlowMark works completely offline without requiring any account creation or sign-in."
+  type="basic"
+/>
+
+<Accordion
+  question="What is Front Matter?"
+  answer="Front Matter is YAML metadata at the top of your Markdown files. FlowMark uses it to store titles, tags, dates, and other metadata for better organization and searching."
+  type="setting"
+/>
+<Accordion
+  question="Can I use tags to organize my notes?"
+  answer="Yes! By adding tags to your Front Matter, you can quickly filter and organize your notes by category or topic. FlowMark provides tag-based filtering for easy discovery."
+  type="setting"
+/>
+<Accordion
+  question="Does FlowMark support real-time preview?"
+  answer="Yes. FlowMark offers split view (editor and preview side-by-side), full preview mode, and editor-only mode. Choose the view that works best for you."
+  type="setting"
+/>
+<Accordion
+  question="Can I edit the same file with other editors?"
+  answer="Absolutely! FlowMark watches for changes and automatically syncs external edits. Work with FlowMark and other editors simultaneously without conflicts."
+  type="setting"
+/>
+
+<Accordion
+  question="Is FlowMark free?"
+  answer="Yes, FlowMark is completely free and open source. Use it for personal or commercial projects without any limitations."
+  type="help"
+/>
+<Accordion
+  question="Where is my data stored?"
+  answer="All your notes are stored locally on your computer in your Markdown files. FlowMark doesn't upload, cloud-sync, or transmit your data anywhere."
+  type="help"
+/>
+<Accordion
+  question="Does FlowMark have a mobile app?"
+  answer="Currently, FlowMark is a desktop application. Since your notes are plain Markdown files, you can edit them on mobile with any Markdown editor."
+  type="help"
+/>
+
+</AccordionContainer>
+
+</Section>

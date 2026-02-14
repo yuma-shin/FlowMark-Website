@@ -1,0 +1,10 @@
+---
+import { getFlowMarkDownloadLinks } from "~/lib/flowmarkDownloads";
+
+const { label } = Astro.props;
+const links = await getFlowMarkDownloadLinks();
+---
+
+<a href={links.releasePage} class="btn btn-outline-primary">
+  {label}
+</a>

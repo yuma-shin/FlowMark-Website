@@ -1,0 +1,26 @@
+{
+  "main": [
+    {
+      "label": "Getting Started",
+      "items": [
+        {
+          "label": "Overview",
+          "slug": "getting-started/overview"
+        },
+        {
+          "label": "Get Started",
+          "slug": "getting-started/getstarted"
+        }
+      ]
+    },
+    {
+      "label": "Basics",
+      "items": [
+        {
+          "label": "User Interface",
+          "slug": "basics/user-interface"
+        }
+      ]
+    }
+  ]
+}

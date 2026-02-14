@@ -1,0 +1,85 @@
+{
+  "main": [
+    {
+      "name": "ホーム",
+      "url": "/ja"
+    },
+    {
+      "name": "ドキュメント",
+      "url": "/ja/getting-started/overview/"
+    }
+  ],
+  "footer": {
+    "community": {
+      "title": "コミュニティに参加",
+      "links": [
+        {
+          "name": "GitHubディスカッション",
+          "url": "https://github.com/themefisher/dockit/discussions"
+        },
+        {
+          "name": "Discordコミュニティ",
+          "url": "/"
+        },
+        {
+          "name": "Twitterアップデート",
+          "url": "/"
+        },
+        {
+          "name": "貢献ガイド",
+          "url": "/"
+        }
+      ]
+    },
+    "help_links": {
+      "title": "ヘルプリンク",
+      "links": [
+        {
+          "name": "はじめに",
+          "url": "/"
+        },
+        {
+          "name": "プライバシーポリシー",
+          "url": "/privacy-policy"
+        },
+        {
+          "name": "利用規約",
+          "url": "/terms-conditions"
+        },
+        {
+          "name": "私たちについて",
+          "url": "/about"
+        },
+        {
+          "name": "トラブルシューティング",
+          "url": "/"
+        }
+      ]
+    },
+    "company": {
+      "title": "リソース",
+      "links": [
+        {
+          "name": "ドキュメントハブ",
+          "url": "/docs/"
+        },
+        {
+          "name": "テーマギャラリー",
+          "url": "/"
+        },
+        {
+          "name": "ベストプラクティス",
+          "url": "/"
+        },
+        {
+          "name": "パフォーマンスのヒント",
+          "url": "/"
+        },
+        {
+          "name": "移行ガイド",
+          "url": "/"
+        }
+      ]
+    }
+  }
+}

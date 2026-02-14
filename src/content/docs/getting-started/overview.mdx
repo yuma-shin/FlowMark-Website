@@ -1,0 +1,35 @@
+---
+title: Overview
+description: FlowMark is a lightweight desktop note editor for managing Markdown files stored locally on your computer. No cloud. No subscription. Your notes stay under your control.
+---
+
+![flowmark dark](@/assets/flowmark-dark.png)
+
+## Welcome to FlowMark!
+
+FlowMark is a lightweight desktop note editor for managing Markdown files stored locally on your computer. No cloud. No subscription. Your notes stay under your control.
+
+import Grid from "~/components/user-components/Grid.astro";
+import Card from "~/components/user-components/NewCard.astro";
+
+<Grid columns={2}>
+  <Card title="Markdown Editor" icon="markdown" iconColor="#FF8585" size="sm">
+    Real-time editing powered by CodeMirror. Choose from split view, preview, or editor-only mode for an efficient workflow.
+  </Card>
+  <Card title="Folder-Based Management" icon="folder" iconColor="#7BE1A4" size="sm">
+    Manage notes intuitively. Select a root folder, then organize Markdown files through a folder tree and note list.
+  </Card>
+  <Card title="Front Matter Support" icon="code" iconColor="#FFD97B" size="sm">
+    Manage titles, tags, and timestamps with YAML metadata. Quickly find notes using tag-based filtering.
+  </Card>
+  <Card
+    title="Auto Save and File Watching"
+    icon="save"
+    iconColor="#979BFF"
+    size="sm"
+  >
+    Detect file changes in real time with debounced auto-save. Works smoothly alongside external editors.
+  </Card>
+</Grid>
+
+---

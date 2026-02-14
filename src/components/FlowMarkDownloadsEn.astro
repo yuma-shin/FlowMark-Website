@@ -1,0 +1,32 @@
+---
+import Section from "~/components/Section.astro";
+import Card from "~/components/user-components/NewCard.astro";
+import Grid from "~/components/user-components/Grid.astro";
+import Button from "~/components/user-components/Button.astro";
+import { getFlowMarkDownloadLinks } from "~/lib/flowmarkDownloads";
+
+const links = await getFlowMarkDownloadLinks();
+---
+
+<Section
+  title="Downloads by Platform"
+  description="Choose the installer that matches your OS."
+>
+  <Grid columns={2}>
+    <Card title="Windows" icon="windows" iconColor="#7AB8FF" size="sm">
+      For Windows 10 / 11 (64-bit). Choose the package format you need.
+      <div class="mt-6 flex flex-col gap-3">
+        <Button label=".exe Installer" link={links.windowsSetupExe} variant="primary" />
+        <Button label=".exe Portable" link={links.windowsPortableExe} variant="outline-primary" />
+        <Button label=".zip Archive" link={links.windowsZip} variant="outline-primary" />
+      </div>
+    </Card>
+    <Card title="macOS" icon="apple" iconColor="#FFB370" size="sm">
+      Supports Apple Silicon and Intel Macs with separate and universal builds.
+      <div class="mt-6 flex flex-col gap-3">
+        <Button label=".dmg" link={links.macArmDmg} variant="primary" />
+        <Button label=".zip (Universal)" link={links.macUniversalZip} variant="outline-primary" />
+      </div>
+    </Card>
+  </Grid>
+</Section>
