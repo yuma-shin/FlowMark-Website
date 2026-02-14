@@ -12,7 +12,7 @@ const links = await getFlowMarkDownloadLinks();
   title="プラットフォーム別ダウンロード"
   description="お使いのOSに合わせてインストーラーを選択してください。"
 >
-  <Grid columns={2}>
+  <Grid columns={1}>
     <Card title="Windows" icon="windows" iconColor="#7AB8FF" size="sm">
       Windows 10 / 11（64-bit）向け。用途に応じて配布形式を選択してください。
       <div class="mt-6 flex flex-col gap-3">
@@ -21,6 +21,7 @@ const links = await getFlowMarkDownloadLinks();
         <Button label=".zip アーカイブ" link={links.windowsZip} variant="outline-primary" />
       </div>
     </Card>
+    <!--
     <Card title="macOS" icon="apple" iconColor="#FFB370" size="sm">
       Apple Silicon / Intel Mac向けに、標準インストーラーと圧縮版を用意できます。
       <div class="mt-6 flex flex-col gap-3">
@@ -28,5 +29,6 @@ const links = await getFlowMarkDownloadLinks();
         <Button label=".zip (Universal)" link={links.macUniversalZip} variant="outline-primary" />
       </div>
     </Card>
+     -->
   </Grid>
 </Section>

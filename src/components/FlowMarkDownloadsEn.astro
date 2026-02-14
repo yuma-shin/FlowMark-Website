@@ -12,7 +12,7 @@ const links = await getFlowMarkDownloadLinks();
   title="Downloads by Platform"
   description="Choose the installer that matches your OS."
 >
-  <Grid columns={2}>
+  <Grid columns={1}>
     <Card title="Windows" icon="windows" iconColor="#7AB8FF" size="sm">
       For Windows 10 / 11 (64-bit). Choose the package format you need.
       <div class="mt-6 flex flex-col gap-3">
@@ -21,6 +21,7 @@ const links = await getFlowMarkDownloadLinks();
         <Button label=".zip Archive" link={links.windowsZip} variant="outline-primary" />
       </div>
     </Card>
+    <!--
     <Card title="macOS" icon="apple" iconColor="#FFB370" size="sm">
       Supports Apple Silicon and Intel Macs with separate and universal builds.
       <div class="mt-6 flex flex-col gap-3">
@@ -28,5 +29,6 @@ const links = await getFlowMarkDownloadLinks();
         <Button label=".zip (Universal)" link={links.macUniversalZip} variant="outline-primary" />
       </div>
     </Card>
+     -->
   </Grid>
 </Section>
