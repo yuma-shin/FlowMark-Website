@@ -2,23 +2,59 @@
   "main": [
     {
       "label": "Getting Started",
+      "translations": {
+        "ja": "始め方"
+      },
       "items": [
         {
           "label": "Overview",
+          "translations": {
+            "ja": "概要"
+          },
           "slug": "getting-started/overview"
         },
         {
           "label": "Get Started",
+          "translations": {
+            "ja": "始め方"
+          },
           "slug": "getting-started/getstarted"
         }
       ]
     },
     {
-      "label": "Basics",
+      "label": "Usage",
+      "translations": {
+        "ja": "使い方"
+      },
       "items": [
         {
-          "label": "User Interface",
-          "slug": "basics/user-interface"
+          "label": "Basic Usage",
+          "translations": {
+            "ja": "基本的な使い方"
+          },
+          "slug": "usage/basic-usage"
+        },
+        {
+          "label": "Write Markdown",
+          "translations": {
+            "ja": "Markdownの書き方"
+          },
+          "slug": "usage/write-markdown"
+        },
+        {
+          "label": "Multi window",
+          "translations": {
+            "ja": "別ウィンドウでノートを表示する"
+          },
+          "slug": "usage/multi-window"
+        },
+        {
+          "label": "Options",
+          "translations": {
+            "ja": "オプション設定"
+          },
+          "slug": "usage/option"
         }
       ]
     }

@@ -16,9 +16,9 @@ const links = await getFlowMarkDownloadLinks();
     <Card title="Windows" icon="windows" iconColor="#7AB8FF" size="sm">
       Windows 10 / 11（64-bit）向け。用途に応じて配布形式を選択してください。
       <div class="mt-6 flex flex-col gap-3">
-        <Button label=".exe インストーラー" link={links.windowsSetupExe} variant="outline-primary" />
-        <Button label=".exe ポータブル" link={links.windowsPortableExe} variant="outline-primary" />
-        <Button label=".zip アーカイブ" link={links.windowsZip} variant="outline-primary" />
+        <Button label="インストーラー (.exe)" link={links.windowsSetupExe} variant="outline-primary" />
+        <Button label="ポータブル版 (.exe)" link={links.windowsPortableExe} variant="outline-primary" />
+        <Button label="圧縮版 (.zip)" link={links.windowsZip} variant="outline-primary" />
       </div>
     </Card>
     <Card title="macOS (Beta)" icon="apple" iconColor="#FFB370" size="sm">
