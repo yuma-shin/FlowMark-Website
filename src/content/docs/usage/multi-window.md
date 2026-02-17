@@ -1,9 +1,9 @@
 ---
 title: View Notes in a Separate Window
-description: In FlowMark, you can display notes in a separate window.
+description: In Notyra, you can display notes in a separate window.
 ---
 
-In FlowMark, you can open multiple notes in separate windows and edit them at the same time.
+In Notyra, you can open multiple notes in separate windows and edit them at the same time.
 
 1. Double-click the target note in the note list.  
    ![click note](@/assets/click-note.png)

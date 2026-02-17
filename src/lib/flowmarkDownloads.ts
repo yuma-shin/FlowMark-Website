@@ -8,7 +8,7 @@ type GitHubRelease = {
   assets?: GitHubAsset[];
 };
 
-export type FlowMarkDownloadLinks = {
+export type NotyraDownloadLinks = {
   releasePage: string;
   windowsSetupExe: string;
   windowsPortableExe: string;
@@ -22,11 +22,11 @@ export type FlowMarkDownloadLinks = {
 };
 
 const RELEASES_API =
-  "https://api.github.com/repos/yuma-shin/FlowMark/releases/latest";
+  "https://api.github.com/repos/yuma-shin/Notyra/releases/latest";
 const FALLBACK_RELEASE_URL =
-  "https://github.com/yuma-shin/FlowMark/releases/tag/v1.0.3";
+  "https://github.com/yuma-shin/Notyra/releases/tag/v1.0.3";
 
-const defaultLinks: FlowMarkDownloadLinks = {
+const defaultLinks: NotyraDownloadLinks = {
   releasePage: FALLBACK_RELEASE_URL,
   windowsSetupExe: FALLBACK_RELEASE_URL,
   windowsPortableExe: FALLBACK_RELEASE_URL,
@@ -39,7 +39,7 @@ const defaultLinks: FlowMarkDownloadLinks = {
   linuxRpm: FALLBACK_RELEASE_URL,
 };
 
-let cached: Promise<FlowMarkDownloadLinks> | null = null;
+let cached: Promise<NotyraDownloadLinks> | null = null;
 
 function findAsset(
   assets: GitHubAsset[],
@@ -52,7 +52,7 @@ function findAsset(
   return hit?.browser_download_url || fallback;
 }
 
-export async function getFlowMarkDownloadLinks(): Promise<FlowMarkDownloadLinks> {
+export async function getNotyraDownloadLinks(): Promise<NotyraDownloadLinks> {
   if (cached) return cached;
 
   cached = (async () => {

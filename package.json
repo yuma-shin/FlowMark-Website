@@ -1,7 +1,7 @@
 {
-  "name": "flowmark-website",
+  "name": "notyra-website",
   "version": "0.0.2",
-  "description": "The official website for FlowMark, the open-source workflow orchestration tool. Explore documentation, guides, and resources to get started with FlowMark and optimize your workflow management.",
+  "description": "The official website for Notyra, the open-source workflow orchestration tool. Explore documentation, guides, and resources to get started with Notyra and optimize your workflow management.",
   "author": "Yuma Shintani",
   "license": "MIT",
   "type": "module",

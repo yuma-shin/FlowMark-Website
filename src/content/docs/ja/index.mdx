@@ -1,11 +1,11 @@
 ---
-title: FlowMark - ローカルMarkdownノートエディタ
+title: Notyra - ローカルMarkdownノートエディタ
 description: プライバシーファーストで、ローカルファイルシステムと統合されたMarkdownノート管理用の軽量デスクトップアプリケーション。
 template: splash
 hero:
   title: |
-    <img src="/icon-dark.svg" alt="FlowMark Logo" class="w-25 h-25 inline-block align-middle" />
-    <div class="mt-2">FlowMark</div>
+    <img src="/icon-dark.svg" alt="Notyra Logo" class="w-25 h-25 inline-block align-middle" />
+    <div class="mt-2">Notyra</div>
   tagline: デスクトップ用の軽量Markdownノートエディタ。<br />あなたのノートをローカルに、プライベートに、そしてあなたの管理下に置きます。
 ---
 
@@ -14,7 +14,7 @@ import Card from "~/components/user-components/NewCard.astro";
 import Grid from "~/components/user-components/Grid.astro";
 
 <Section
-  title="FlowMarkの機能"
+  title="Notyraの機能"
   description="Markdownノートを効率的に整理・編集するために必要なすべてを備えています。"
 >
   <Grid columns={4}>
@@ -57,7 +57,7 @@ import HeroTabsItem from "~/components/HeroTabsItem.astro";
 >
   <HeroTabs>
     <HeroTabsItem
-      title="FlowMarkをインストール"
+      title="Notyraをインストール"
       subtitle="右上の「ダウンロード」ボタンをクリックし、お使いのプラットフォーム向けの最新版を入手し、インストールします。"
       number={1}
       image="/src/assets/step-1.png"
@@ -65,7 +65,7 @@ import HeroTabsItem from "~/components/HeroTabsItem.astro";
     />
     <HeroTabsItem
       title="ノートフォルダを選択"
-      subtitle="FlowMarkを起動しMarkdownファイルが保存されている場所(ルートフォルダ)を選択します。"
+      subtitle="Notyraを起動しMarkdownファイルが保存されている場所(ルートフォルダ)を選択します。"
       number={2}
       image="/src/assets/step-2.png"
       imageAlt="フォルダ選択ステップ"
@@ -99,7 +99,7 @@ import Accordion from "~/components/Accordion.astro";
 
 <Section
   title={'よくあるご質問'}
-  description="FlowMarkについてのよくある質問と回答をご紹介します。"
+  description="Notyraについてのよくある質問と回答をご紹介します。"
 >
 
 <AccordionContainer tabList={
@@ -107,14 +107,14 @@ import Accordion from "~/components/Accordion.astro";
     {
       type: 'basic',
       title: 'はじめに',
-      subtitle:'FlowMarkのダウンロードと使用方法。',
+      subtitle:'Notyraのダウンロードと使用方法。',
       icon: "rocket"
 
     },
     {
       type: 'setting',
       title: '機能と使い方',
-      subtitle:'FlowMarkの機能を理解する。',
+      subtitle:'Notyraの機能を理解する。',
       icon: "settings"
 
     },
@@ -130,60 +130,60 @@ import Accordion from "~/components/Accordion.astro";
 }>
 
 <Accordion
-  question="FlowMarkとは何ですか？"
-  answer="FlowMarkは、コンピュータのローカルに保存されたMarkdownファイルを管理できる軽量デスクトップノートエディタです。クラウドなし、サブスクリプションなし。あなたのノートはあなたの管理下にあります。"
+  question="Notyraとは何ですか？"
+  answer="Notyraは、コンピュータのローカルに保存されたMarkdownファイルを管理できる軽量デスクトップノートエディタです。クラウドなし、サブスクリプションなし。あなたのノートはあなたの管理下にあります。"
   type="basic"
 />
 <Accordion
   question="どのように始めればいいですか？"
-  answer="FlowMarkをお使いのプラットフォーム向けにダウンロードし、ノートフォルダを選択して編集を開始するだけ。シンプルです。ノートはコンピュータのどこのフォルダにでも置けます。"
+  answer="Notyraをお使いのプラットフォーム向けにダウンロードし、ノートフォルダを選択して編集を開始するだけ。シンプルです。ノートはコンピュータのどこのフォルダにでも置けます。"
   type="basic"
 />
 <Accordion
-  question="FlowMarkはどのファイル形式に対応していますか？"
-  answer="FlowMarkは主にMarkdown（.md）ファイルで動作します。ローカルファイルシステムを尊重するので、すべてのノートはプレーンテキストファイルで、どのエディタでも編集できます。"
+  question="Notyraはどのファイル形式に対応していますか？"
+  answer="Notyraは主にMarkdown（.md）ファイルで動作します。ローカルファイルシステムを尊重するので、すべてのノートはプレーンテキストファイルで、どのエディタでも編集できます。"
   type="basic"
 />
 <Accordion
   question="アカウントが必要ですか？"
-  answer="いいえ。FlowMarkはアカウント作成やサインインなしで、完全にオフラインで動作します。"
+  answer="いいえ。Notyraはアカウント作成やサインインなしで、完全にオフラインで動作します。"
   type="basic"
 />
 
 <Accordion
   question="Front Matterとは何ですか？"
-  answer="Front MatterはMarkdownファイルの上部にあるYAMLメタデータです。FlowMarkはタイトル、タグ、日時などのメタデータを保存して、ノート整理と検索を改善します。"
+  answer="Front MatterはMarkdownファイルの上部にあるYAMLメタデータです。Notyraはタイトル、タグ、日時などのメタデータを保存して、ノート整理と検索を改善します。"
   type="setting"
 />
 <Accordion
   question="タグでノートを整理できますか？"
-  answer="もちろんです！Front Matterにタグを追加することで、カテゴリやトピックでノートをフィルタリングして素早く検索できます。FlowMarkはタグベースのフィルタリングを提供しています。"
+  answer="もちろんです！Front Matterにタグを追加することで、カテゴリやトピックでノートをフィルタリングして素早く検索できます。Notyraはタグベースのフィルタリングを提供しています。"
   type="setting"
 />
 <Accordion
-  question="FlowMarkはリアルタイムプレビューに対応していますか？"
-  answer="はい。FlowMarkはスプリットビュー（エディタとプレビュー並べて表示）、フルプレビューモード、エディタのみモードを提供します。あなたにぴったりなビューを選んでください。"
+  question="Notyraはリアルタイムプレビューに対応していますか？"
+  answer="はい。Notyraはスプリットビュー（エディタとプレビュー並べて表示）、フルプレビューモード、エディタのみモードを提供します。あなたにぴったりなビューを選んでください。"
   type="setting"
 />
 <Accordion
   question="同じファイルを他のエディタで編集できますか？"
-  answer="もちろんです！FlowMarkはファイル変更を監視して、外部から編集されたファイルを自動で同期します。FlowMarkと他のエディタを同時に使用しても問題ありません。"
+  answer="もちろんです！Notyraはファイル変更を監視して、外部から編集されたファイルを自動で同期します。Notyraと他のエディタを同時に使用しても問題ありません。"
   type="setting"
 />
 
 <Accordion
-  question="FlowMarkは無料ですか？"
-  answer="はい、FlowMarkは完全に無料でオープンソースです。個人プロジェクト、商用プロジェクト、制限なく利用できます。"
+  question="Notyraは無料ですか？"
+  answer="はい、Notyraは完全に無料でオープンソースです。個人プロジェクト、商用プロジェクト、制限なく利用できます。"
   type="help"
 />
 <Accordion
   question="データはどこに保存されていますか？"
-  answer="すべてのノートはコンピュータのMarkdownファイルにローカル保存されます。FlowMarkはデータをアップロード、クラウド同期、または他の場所に送信することはありません。"
+  answer="すべてのノートはコンピュータのMarkdownファイルにローカル保存されます。Notyraはデータをアップロード、クラウド同期、または他の場所に送信することはありません。"
   type="help"
 />
 <Accordion
-  question="FlowMarkにモバイルアプリはありますか？"
-  answer="現在、FlowMarkはデスクトップアプリケーションのみ提供しておりモバイルアプリの提供は未定です。ノートはプレーンなMarkdownファイルなので、モバイルでは任意のMarkdownエディタで編集できます。"
+  question="Notyraにモバイルアプリはありますか？"
+  answer="現在、Notyraはデスクトップアプリケーションのみ提供しておりモバイルアプリの提供は未定です。ノートはプレーンなMarkdownファイルなので、モバイルでは任意のMarkdownエディタで編集できます。"
   type="help"
 />
 
@@ -198,7 +198,7 @@ import Accordion from "~/components/Accordion.astro";
 
 <div class="text-center">
   <a
-    href="https://github.com/yuma-shin/FlowMark/issues/new"
+    href="https://github.com/yuma-shin/Notyra/issues/new"
     class={`btn btn-outline-primary`}
     target="_blank"
   >

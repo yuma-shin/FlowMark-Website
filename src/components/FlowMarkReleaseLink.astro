@@ -1,8 +1,8 @@
 ---
-import { getFlowMarkDownloadLinks } from "~/lib/flowmarkDownloads";
+import { getNotyraDownloadLinks } from "~/lib/flowmarkDownloads";
 
 const { label } = Astro.props;
-const links = await getFlowMarkDownloadLinks();
+const links = await getNotyraDownloadLinks();
 ---
 
 <a href={links.releasePage} class="btn btn-outline-primary">

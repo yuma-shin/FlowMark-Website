@@ -1,9 +1,9 @@
 ---
 title: How to Write Markdown
-description: FlowMark uses Markdown syntax for writing.
+description: Notyra uses Markdown syntax for writing.
 ---
 
-FlowMark uses Markdown syntax for writing.  
+Notyra uses Markdown syntax for writing.  
 You can also use GitHub Alerts.
 
 ## Headings

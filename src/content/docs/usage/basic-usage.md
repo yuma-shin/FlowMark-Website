@@ -1,11 +1,11 @@
 ---
 title: Basic Usage
-description: Explore the main user interface of FlowMark and learn how to navigate and use its features effectively.
+description: Explore the main user interface of Notyra and learn how to navigate and use its features effectively.
 ---
 
 ![flowmark select root folder](@/assets/flowmark-light.png)
 
-FlowMark’s UI consists of three main sections.
+Notyra’s UI consists of three main sections.
 
 - Sidebar: The sidebar on the left displays the folder tree and lets you manage notes hierarchically.
 - Note List: Next to the sidebar, a list of Markdown notes in the selected folder is shown for easy access.

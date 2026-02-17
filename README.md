@@ -1,6 +1,6 @@
-# FlowMark Website
+# Notyra Website
 
-FlowMark の公式サイト/ドキュメントサイトです。  
+Notyra の公式サイト/ドキュメントサイトです。  
 Astro + Starlight をベースに、カスタムコンポーネントと多言語（英語/日本語）構成で実装されています。
 
 ## 技術スタック

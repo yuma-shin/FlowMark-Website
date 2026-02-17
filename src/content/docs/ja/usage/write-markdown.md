@@ -1,9 +1,9 @@
 ---
 title: マークダウンの書き方
-description: FlowMarkはマークダウン記法で記述します。
+description: Notyraはマークダウン記法で記述します。
 ---
 
-FlowMarkではマークダウン記法で記述します。  
+Notyraではマークダウン記法で記述します。  
 また、Github Alertを利用することも出来ます。
 
 ## 見出し

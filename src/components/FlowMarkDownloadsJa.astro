@@ -3,9 +3,9 @@ import Section from "~/components/Section.astro";
 import Card from "~/components/user-components/NewCard.astro";
 import Grid from "~/components/user-components/Grid.astro";
 import Button from "~/components/user-components/Button.astro";
-import { getFlowMarkDownloadLinks } from "~/lib/flowmarkDownloads";
+import { getNotyraDownloadLinks } from "~/lib/flowmarkDownloads";
 
-const links = await getFlowMarkDownloadLinks();
+const links = await getNotyraDownloadLinks();
 ---
 
 <Section
@@ -24,7 +24,7 @@ const links = await getFlowMarkDownloadLinks();
     <Card title="macOS (Beta)" icon="apple" iconColor="#FFB370" size="sm">
       Apple Silicon / Intel Mac向けに、標準インストーラーと圧縮版を用意しています。ただし、署名を行っていないため、セキュリティ警告で起動できない場合があります。
       その際は、以下の手順でアプリを起動いただくか、ご自身のローカル環境でビルドしていただくことを推奨します。
-      <br /><a href="https://github.com/yuma-shin/FlowMark/blob/main/RUN_UNSIGNED_APPS.md" target="_blank">Running Unsigned Apps</a>
+      <br /><a href="https://github.com/yuma-shin/Notyra/blob/main/RUN_UNSIGNED_APPS.md" target="_blank">Running Unsigned Apps</a>
       <div class="mt-6 flex flex-col gap-3">
         <Button label=".dmg" link={links.macArmDmg} variant="outline-primary" />
         <Button label=".zip (Universal)" link={links.macUniversalZip} variant="outline-primary" />

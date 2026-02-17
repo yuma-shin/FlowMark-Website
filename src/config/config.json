@@ -1,11 +1,14 @@
 {
   "site": {
-    "title": "FlowMark",
+    "title": "Notyra",
+    "author": "Yuma Shintani",
+    "email": "yuma@y-shin.net",
+    "base_url": "https://flowmark.y-shin.net",
     "logo": "/src/assets/icon-light.png",
     "logo_darkmode": "/src/assets/icon-dark.png",
     "logo_width": "35",
     "logo_height": "35",
-    "logo_text": "FlowMark"
+    "logo_text": "Notyra"
   },
 
   "settings": {
@@ -18,7 +21,7 @@
       "enable": true,
       "action": "#"
     },
-    "copyright": "&copy; 2026 FlowMark. All Rights Reserved."
+    "copyright": "&copy; 2026 Notyra. All Rights Reserved."
   },
 
   "navigation_button": {
@@ -34,6 +37,12 @@
   "github_button": {
     "enable": true,
     "label": "GitHub",
-    "link": "https://github.com/yuma-shin/FlowMark"
+    "link": "https://github.com/yuma-shin/Notyra"
+  },
+
+  "github": {
+    "repository": "yuma-shin/flowmark-website",
+    "branch": "main",
+    "editLinks": true
   }
 }
